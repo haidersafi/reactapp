@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
-     run: npm install 
+    - uses: jaid/action-npm-install@v1.2.1
     - name: build react app
      run: npm run build
     - name: installing surge
